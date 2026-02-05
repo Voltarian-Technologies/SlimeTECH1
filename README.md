@@ -18,7 +18,6 @@ SlimeTECH won't be compatible with any current Slimefun Addons but we are willin
 * **[:beetle: Bug Tracker](https://github.com/SlimeTECH/SlimeTECH1/issues)**
 * **[:open_book: Wiki](https://github.com/SlimeTECH/SlimeTECH1/wiki)**
 * **[:interrobang: FAQ](https://github.com/SlimeTECH/SlimeTECH1/wiki/FAQ)**
-* **[:handshake: How to contribute](https://github.com/SlimeTECH/SlimeTECH1/blob/master/CONTRIBUTING.md)**
 
 ## :floppy_disk: Download SlimeTECH 1
 SlimeTECH requires your Minecraft Server to be running on [Spigot](https://spigotmc.org/), [Paper](https://papermc.io/) or on any fork of these.<br>
@@ -91,8 +90,6 @@ The wiki is entirely community-run, so if you find an article missing, feel free
 SlimeTECH 1 is an Open-Source project and licensed under
 [GNU GPLv3](https://github.com/SlimeTECH/SlimeTECH1/blob/master/LICENSE).<br>
 Please consider helping us maintain this project too, your engagement keeps the project alive!
-
-You can find more info on how to contribute to this project in our [CONTRIBUTING.md](https://github.com/SlimeTECH/SlimeTECH1/blob/master/CONTRIBUTING.md).
 
 ## :exclamation: Disclaimers
 SlimeTECH 1 uses various systems that collect usage information or download automatic updates as well as the latest information about the project.
