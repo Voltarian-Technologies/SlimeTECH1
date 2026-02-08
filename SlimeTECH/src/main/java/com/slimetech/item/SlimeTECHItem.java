@@ -1,5 +1,7 @@
 package com.slimetech.item;
 
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.format.NamedTextColor;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ItemStack;
@@ -30,7 +32,7 @@ public class SlimeTECHItem {
         
         if (meta != null) {
             // Always show as "Copper Ingot" even when it's a brick
-            meta.setDisplayName(org.bukkit.ChatColor.WHITE + displayName);
+            meta.displayName(Component.text(displayName, NamedTextColor.WHITE));
             
             // Mark it as a SlimeTECH copper ingot
             PersistentDataContainer pdc = meta.getPersistentDataContainer();

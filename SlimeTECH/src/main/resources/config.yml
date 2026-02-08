@@ -3,8 +3,27 @@
 
 messages:
   prefix: "&8[&3SlimeTECH&8] &7"
+  welcome: "&aWelcome to SlimeTECH! Check your inventory for the guide book!"
   
 features:
   magic-enabled: true
   tech-enabled: true
   energy-system: true
+  
+copper-system:
+  # What material to show copper as in older versions
+  legacy-material: BRICK
+  # Should copper auto-transform on join?
+  auto-transform: true
+  
+guide-book:
+  # Should new players get a guide book automatically?
+  give-to-new-players: true
+  # Delay in ticks before giving the book
+  give-delay: 40
+  
+crafting:
+  # Enable the crafting GUI
+  enabled: true
+  # Categories to show in GUI
+  categories: [basic, energy, storage, magic, tools]

@@ -1,8 +1,10 @@
 package com.slimetech;
 
+import com.slimetech.gui.GUIManager;
 import com.slimetech.item.ItemManager;
 import com.slimetech.item.MaterialMapper;
 import com.slimetech.listeners.ItemTransformListener;
+import com.slimetech.listeners.PlayerJoinListener;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -19,12 +21,17 @@ public class SlimeTECH extends JavaPlugin {
             getDataFolder().mkdirs();
         }
         
-        // Initialize systems
-        MaterialMapper.getInstance(); // Detect version
-        ItemManager.getInstance();    // Setup items
+        // Save default config
+        saveDefaultConfig();
+        
+        // Initialize systems in correct order
+        MaterialMapper.getInstance(); // First - detects version
+        ItemManager.getInstance();    // Second - registers items
         
         // Register events
         Bukkit.getPluginManager().registerEvents(new ItemTransformListener(), this);
+        Bukkit.getPluginManager().registerEvents(new PlayerJoinListener(), this);
+        Bukkit.getPluginManager().registerEvents(GUIManager.getInstance(), this);
         
         // Register commands
         getCommand("slimetch").setExecutor(new SlimeTECHCommand());
@@ -36,6 +43,8 @@ public class SlimeTECH extends JavaPlugin {
         getLogger().info("Version: " + MaterialMapper.getInstance().getVersionInfo());
         getLogger().info("Copper Ingot → " + 
             MaterialMapper.getInstance().getCopperIngotMaterial());
+        getLogger().info("Guide system: ✓ Active");
+        getLogger().info("GUI system: ✓ Active");
         getLogger().info("==========================================");
     }
     
