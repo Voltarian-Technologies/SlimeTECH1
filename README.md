@@ -5,9 +5,8 @@ SlimeTECH is a plugin which aims to turn your Bukkit Server into a modpack witho
 We got everything from magical wands to nuclear reactors and more.<br>
 We feature a magical altar, an electric power grid with Electricity Meters and even item transport systems.
 
-This project is based on Slimefun, and is currently being managed and worked on by 3 people to update and bring this plugin to a newer and higher glory.<br>
+This project is based on Technology, and is currently being managed and worked on by 3 people to build this amazing plugin.<br>
 We would love to continue working on this plugin and expand the community, having official and unofficial addons alike, we wish to update the plugin to 1.21.11 bring new functionality and updated items.<br>
-It currently adds over **500 new items and recipes** to Minecraft, in which we aim to at least double. ([Read more about the history of Slimefun](https://github.com/Slimefun/Slimefun4/wiki/Slimefun-in-a-nutshell)).
 
 SlimeTECH won't be compatible with any current Slimefun Addons but we are willing to work with anyone who would like to bring their addon over and update it.
 
