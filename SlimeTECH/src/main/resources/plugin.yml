@@ -2,11 +2,12 @@ name: SlimeTECH
 version: 1.0.0
 main: com.slimetech.SlimeTECH
 api-version: '1.16'
-author: YourName
+author: Emarxian, DevNullified_, Voxel_Cat
 description: Tech & Magic plugin with auto-version adaptation
 
 commands:
   slimetch:
     description: Main SlimeTECH command
     usage: /<command> [give|version|info|items|migrate]
-    aliases: [st, tech]
+
+    aliases: [st, slimetech]
