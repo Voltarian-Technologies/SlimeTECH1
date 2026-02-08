@@ -3,17 +3,17 @@ plugins {
 }
 
 group = "com.slimetech"
-version = "1.0.0"
+version = "1.0.1"
 
 repositories {
     mavenCentral()
     maven {
-        url = uri("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
+        url = uri("https://repo.papermc.io/repository/maven-public/")
     }
 }
 
 dependencies {
-    compileOnly("org.spigotmc:spigot-api:1.20.4-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.17.1-R0.1-SNAPSHOT")
 }
 
 tasks {
@@ -22,7 +22,7 @@ tasks {
     }
     
     jar {
-        archiveFileName.set("SlimeTECH.jar")
+        archiveFileName.set("SlimeTECH-D$version.jar")
         duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     }
 }
